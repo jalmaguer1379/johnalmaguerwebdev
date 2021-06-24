@@ -1,11 +1,11 @@
 body {
-        background-color: rgb(0, 0, 0);
+        background-color: rgb(0, 102, 255);
         margin: 20px 15px;
         padding: 10px;
 }
 
 h1 {
-   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(47,48,25,1) 14%, rgba(0,0,0,1) 23%, rgba(85,145,73,1) 52%, rgba(115,121,9,1) 98%);
+   background: linear-gradient(to bottom right, blue, white);
     color: #F0FFFF; 
     text-align: center;
     margin: 20px;
@@ -15,24 +15,26 @@ h1 {
 }
 
 nav {
-    background-color: rgb(224, 224, 224);
+    background-color: rgb(242, 242, 242);
     margin: 10px;
     padding: 20px 20px 20px 20px;
     position: relative;
     text-align: center;
     height: 40px;
     border-radius: 15px;
+    font-weight: bold;
     
     
 }
 
 nav a {
-        color: rgb(255, 51, 51);
+        color: rgb(0, 0, 0);
         text-decoration: none;
         background-color: blanchedalmond;
-        border-radius: 10px;
+        border-radius: 20px;
         padding: 10px 70px 20px 70px;
-        margin: 30px 3px 30px 3px;
+        margin: 30px 50px 30px 3px;
+        
         
     
         
@@ -41,22 +43,42 @@ nav a {
 }
 
 h2 {
-    background-color: #FFFFCC;
+    background-color: #e6f0ff;
     color: #006600;
     font-variant: small-caps;
 }
 
+#maillist {
+                text-align: center;
+
+
+}
+
 section {
-        background-color: #00994c;
+        background-color: #4d94ff;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
 }
 
+#javascriptnew {
+                display: block;
+                float : right;
+                font-size: large;
+                width: 200px;
+                position: relative;
+                top: 50%;
 
+}
+
+#javascriptnew img {
+                        width: 100px;
+                        padding-left: 20px;
+
+}
 
 ul {
     color: #FF0000;
-    background-color: #E5FFCC;
+    background-color: #b3d1ff;
     
 }
 
@@ -83,13 +105,28 @@ details p {
 
 progress {
           display: block;
+          margin: 30px;
             
 }
 
+#form {
+
+        margin: 5px;
+        position: relative;
+}
+
+footer  {
+               background-color: #4d94ff;
+                
+}
+
 footer p {
-            background-color: #A0A0A0;
+                background: linear-gradient(to bottom right, white, blue);
             color: #FFFFFF;
             height: 40px;
+            border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+            
 }
 
 footer img {

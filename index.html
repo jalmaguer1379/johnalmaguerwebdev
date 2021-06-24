@@ -15,52 +15,69 @@
           <a href="http://www.coursera.org">Favorite</a>
     </nav>
     
-    <section id="left">
+    <section id="left" onmouseout="HideIt()">
     
     <h2 class="center">Favorite Foods</h2>
          <ul>
              <li>Burgers</li>
-             <img src="burger.jpg" class="food">
+             <img src="images/burger.jpg" class="food" id="burger" onclick= "clickMe1()">
              <li>Chile Rellenos</li>
-             <img src="chille%20relleno.jpg" class="food">
+             <img src="images/chille%20relleno.jpg" class="food" id="relleno" onclick= "clickMe2()">
              <li>Chicken Salad</li>
-             <img src="chickensalad.jpg" class="food">
+             <img src="images/chickensalad.jpg" class="food" id="salad" onclick="clickMe3()">
              <li>Pasta</li>
-             <img src="pasta.jpg" class="food">
+             <img src="images/pasta.jpg" class="food" id="pasta" onclick="clickMe4()">
              
          </ul>
+
+         <div id="javascriptnew">Click them pics for something new</div>
     </section>
+
+   
     
     <section id="right">
          
     <h2 class="center">Achievements</h2>
        
-        <p>Progress in this course (33%)&nbsp;<progress value="33" max="100">33</progress></p>
-        <p>Progress in this Specialization capstone (20%)&nbsp;<progress value="20" max="100">20</progress></p>
-        <p>Progress in life (20%)&nbsp;<progress value="20" max="100">20</progress> </p>
+        <p>Progress in this course (47%)&nbsp;<progress value="47" max="100">47</progress></p>
+        <p>Progress in this Specialization capstone (40%)&nbsp;<progress value="40" max="100">40</progress></p>
+        <p>Progress in life (25%)&nbsp;<progress value="25" max="100">25</progress> </p>
            
         
     </section>
     
     <section id="clear">
         
-        <h2>More About Me</h2>
+        <h2 id="maillist">Join my club for exclusive offers!</h2>
         
         <details>
-            <summary>My Childhood</summary>
-            <p>I was born in Tarzana California. I used to travel with my parents to Mexico when I was a child.</p>
+            <summary>Fill this form out to join our mailing list</summary>
+                <form onsubmit="VerifyForm()">
+                        <fieldset>
+                                <label for = "emailName">E-mail:</label> 
+                                <input type="email" name="email" id="email" placeholder="aaa@aaa.com"><br>
+
+                                <label for = "phoneNumber">Phone Number:</label> 
+                                <input type="tel" name="tel" id="tele" placeholder="999-999-9999">
+
+                        </fieldset>
+                        <input type = "submit" value = "Verify" id="form"> 
+
+                </form>
             
         </details>
         
     </section>
     
     <footer>
-       <p>
+       <p id="footer p">
         <img src="http://www.intro-webdesign.com/images/newlogo.png" alt="new logo">
         This page was created by John Almaguer &amp; Colleen Van Lent. To learn more about web design, visit <a href="http://www.intro-webdesign.com">Intro to Web Design</a>
         </p>
         
         
     </footer>
+
+    <script src="john.js"></script>
 </body>
 </html>

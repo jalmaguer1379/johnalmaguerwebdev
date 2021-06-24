@@ -1,7 +1,7 @@
  function clickMe1(berg) {
                    document.getElementById("javascriptnew").innerHTML = "Thats a burger!! so big and juicy";
                    var img1 = document.createElement("img");
-                   img1.src = "images/historyofburger.jpg";
+                   img1.src = "historyofburger.jpg";
                    var src = document.getElementById("javascriptnew");
                    src.appendChild(img1);
  }
@@ -9,7 +9,7 @@
  function clickMe2(rell) {
     document.getElementById("javascriptnew").innerHTML = "Un relleno guey!!!";
     var img2 = document.createElement("img");
-    img2.src = "images/rellenohistory.jpg";
+    img2.src = "rellenohistory.jpg";
     var src2 = document.getElementById("javascriptnew");
     src2.appendChild(img2);
     
@@ -22,7 +22,7 @@
  function clickMe3(chik) {
     document.getElementById("javascriptnew").innerHTML = "When im feeling healthy";
     var img3 = document.createElement("img");
-    img3.src = "images/chiksalad.jpg";
+    img3.src = "chiksalad.jpg";
     var src3 = document.getElementById("javascriptnew");
     src3.appendChild(img3);
     
@@ -31,7 +31,7 @@
  function clickMe4(pasta) {
     document.getElementById("javascriptnew").innerHTML = "Its a me!!! Pasta";
     var img4 = document.createElement("img");
-    img4.src = "images/mario.jpg";
+    img4.src = "mario.jpg";
     var src4 = document.getElementById("javascriptnew");
     src4.appendChild(img4);
     

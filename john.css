@@ -168,6 +168,8 @@ footer img {
 
 .center {
         text-align: center;
+        margin: 0 auto;
+        padding-right: 5%;
 }
 
  
@@ -226,8 +228,8 @@ img:hover {
 */
             
 #cards {
-        padding-top: 5%;
-        
+        margin: 2%;
+        padding: 2%;
         
         
 }

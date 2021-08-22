@@ -36,8 +36,8 @@
                   </li>
                   
                 </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="email" placeholder="Email" aria-label="email">
+                <form class="d-flex" onsubmit="VerifyForm()">
+                  <input class="form-control me-2 verify" type="email" placeholder="Email" aria-label="email" id="email1">
                   <input class="form-control me-2" type="password" placeholder="Password" aria-label="password">
                   <button class="btn btn-success" type="submit">Login</button>
                 </form>
@@ -47,10 +47,10 @@
     
     
           <div class="container-fluid" id="cards">
-            <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="row row-cols-1 row-cols-md-3 g-4 center">
                 <div class="col">
                   <div class="card">
-                    <img src="burger.jpg" class="card-img-top" alt="...">
+                    <img src="images/burger.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Burger</h5>
                       <p class="card-text">A Delicious Burger. MMM</p>
@@ -59,7 +59,7 @@
                 </div>
                 <div class="col">
                   <div class="card">
-                    <img src="chickensalad.jpg" class="card-img-top" alt="...">
+                    <img src="images/chickensalad.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Chicken Salad</h5>
                       <p class="card-text">Chik-a-salad bro. Yum</p>
@@ -68,7 +68,7 @@
                 </div>
                 <div class="col">
                   <div class="card">
-                    <img src="pasta.jpg" class="card-img-top" alt="...">
+                    <img src="images/pasta.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Pasta</h5>
                       <p class="card-text">Easy Recipes to learn yes?</p>
@@ -103,7 +103,7 @@
                 <form onsubmit="VerifyForm()">
                         <fieldset>
                                 <label for = "emailName">E-mail:</label> 
-                                <input type="email" name="email" id="email" placeholder="aaa@aaa.com"><br>
+                                <input type="email" name="email" id="email" class="verify" placeholder="aaa@aaa.com" required><br>
 
                                 <label for = "phoneNumber">Phone Number:</label> 
                                 <input type="tel" name="tel" id="tele" placeholder="999-999-9999">

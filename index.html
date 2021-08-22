@@ -4,36 +4,84 @@
     <meta charset="UTF-8">
     <title>John Almaguer</title>
     <link rel="stylesheet" href="john.css">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css">
 </head>
 <body>
     <h1>John Paul Almaguer</h1>
     
-     <nav>
-          <a href="http://www.facebook.com">One</a>
-          <a href="http://www.google.com">Two</a>
-          <a href="http://www.amazon.com">Three</a>
-          <a href="http://www.coursera.org">Favorite</a>
-    </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#jumbotrons">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#cards">About</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Download App Here
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#footer">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="email" placeholder="Email" aria-label="email">
+                  <input class="form-control me-2" type="password" placeholder="Password" aria-label="password">
+                  <button class="btn btn-success" type="submit">Login</button>
+                </form>
+              </div>
+            </div>
+          </nav>
     
-    <section id="left" onmouseout="HideIt()">
     
-    <h2 class="center">Favorite Foods</h2>
-         <ul>
-             <li>Burgers</li>
-             <img src="burger.jpg" class="food" id="burger" onclick= "clickMe1()">
-             <li>Chile Rellenos</li>
-             <img src="chille%20relleno.jpg" class="food" id="relleno" onclick= "clickMe2()">
-             <li>Chicken Salad</li>
-             <img src="chickensalad.jpg" class="food" id="salad" onclick="clickMe3()">
-             <li>Pasta</li>
-             <img src="pasta.jpg" class="food" id="pasta" onclick="clickMe4()">
-             
-         </ul>
+          <div class="container" id="cards">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card">
+                    <img src="images/burger.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Burger</h5>
+                      <p class="card-text">A Delicious Burger. MMM</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="images/chickensalad.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Chicken Salad</h5>
+                      <p class="card-text">Chik-a-salad bro. Yum</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="images/pasta.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Pasta</h5>
+                      <p class="card-text">Easy Recipes to learn yes?</p>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
 
-         <div id="javascriptnew">Click them pics for something new</div>
-    </section>
-
-   
+              </div>
+      
+              
+   <hr>
     
     <section id="right">
          
@@ -72,12 +120,13 @@
     <footer>
        <p id="footer p">
         <img src="http://www.intro-webdesign.com/images/newlogo.png" alt="new logo">
-        This page was created by John Almaguer &amp; Colleen Van Lent. To learn more about web design, visit <a href="http://www.intro-webdesign.com">Intro to Web Design</a>
+        This page was created by John Almaguer &amp; Colleen Van Lent. To learn more about web design, visit <a href="http://www.intro-webdesign.com" style="color: tomato;">Intro to Web Design</a>
         </p>
         
         
     </footer>
 
     <script src="john.js"></script>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.js"></script>
 </body>
 </html>
